@@ -1,0 +1,34 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,12em);
+    grid-template-rows: [row1] 15em [row2] 25em;
+    grid-gap: 1em;
+    position: relative;
+}
+
+.container div{
+    background-color: lightgray;
+    padding: 1em;
+    text-align: left;
+}
+.container div p{
+    font-size: 20px;
+}
+
+.container .WebsiteVisitors {
+    grid-area: 2 / 2 / 2 / 5;
+}
+.container .Sidebar {
+    grid-row: 1 / 3;
+}
+
+.container .WebsiteVisitors .Graph{
+    background-color: gray;
+    padding: 5em;
+    margin: 2em;
+}
+
+.container ul{
+    list-style-type: none;
+    text-align: left;
+}
